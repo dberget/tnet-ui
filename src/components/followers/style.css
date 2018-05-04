@@ -1,0 +1,28 @@
+h2 {
+  margin: 0;
+}
+
+button {
+  margin-top: 5px;
+  background: #2c5ba3;
+  color: white;
+  font-size: 20px;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formBody {
+  margin: 15px;
+  padding: 30px 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  background-color: #eff1f3;
+}
+
+.formHeader {
+  margin-bottom: 1px;
+  width: 100%;
+}

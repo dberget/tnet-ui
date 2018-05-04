@@ -14,12 +14,14 @@ export default class Attendance extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Attendance Form</h2>
-        <div> Church Service Date: </div>
-        <input onChange={this.handleDate} type="date" />
-        <div> Attendance: </div>
-        <input onChange={this.handleAttendance} type="number" />
+      <div className={style.container}>
+        <div className={style.formBody}>
+          <h2>Attendance Form</h2>
+          <div className={style.formHeader}> Church Service Date: </div>
+          <input onChange={this.handleDate} type="date" />
+          <div className={style.formHeader}> Attendance: </div>
+          <input onChange={this.handleAttendance} type="number" />
+        </div>
       </div>
     )
   }

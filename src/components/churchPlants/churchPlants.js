@@ -1,4 +1,5 @@
 import { h, Component } from "preact"
+import style from "./style.css"
 
 export default class ChurchPlant extends Component {
   state = { location: "" }
@@ -8,10 +9,12 @@ export default class ChurchPlant extends Component {
   }
   render() {
     return (
-      <div>
-        <h2>New Church</h2>
-        <div> Church Location: </div>
-        <input onChange={this.handleLocation} />
+      <div className={style.container}>
+        <div className={style.formBody}>
+          <h2>New Church</h2>
+          <div> Church Location: </div>
+          <input onChange={this.handleLocation} />
+        </div>
       </div>
     )
   }

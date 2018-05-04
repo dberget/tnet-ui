@@ -14,12 +14,14 @@ export default class Giving extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Giving Form</h2>
-        <div> Church Service Date: </div>
-        <input onChange={this.handleDate} type="date" />
-        <div> Giving Amount: </div>
-        <input onChange={this.handleAttendance} type="number" />
+      <div className={style.container}>
+        <div className={style.formBody}>
+          <h2>Giving Form</h2>
+          <div> Church Service Date: </div>
+          <input onChange={this.handleDate} type="date" />
+          <div> Giving Amount: </div>
+          <input onChange={this.handleAttendance} type="number" />
+        </div>
       </div>
     )
   }

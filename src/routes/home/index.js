@@ -3,6 +3,7 @@ import Attendance from "../../components/attendance/attendance"
 import Giving from "../../components/giving/giving"
 import ChurchPlant from "../../components/churchPlants/churchPlants"
 import SmallGroup from "../../components/smallGroups/smallGroups"
+import Believers from "../../components/followers/followers"
 import style from "./style"
 
 export default class Home extends Component {
@@ -13,6 +14,7 @@ export default class Home extends Component {
         <Giving />
         <ChurchPlant />
         <SmallGroup />
+        <Believers />
       </div>
     )
   }
