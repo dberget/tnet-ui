@@ -7,18 +7,5 @@
 select {
   height: 2rem;
   background: white;
-}
-
-.formBody {
-  margin: 15px;
-  padding: 30px 60px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-  background-color: #eff1f3;
-}
-
-.formHeader {
-  font-size: 1.2rem;
-  display: inline;
-  margin: 5rem 0;
-  font-weight: 150;
+  margin-top: 5px;
 }
