@@ -16,6 +16,22 @@ body {
   box-sizing: border-box;
 }
 
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-width: 40%;
+}
+
+.formBody {
+  margin: 15px;
+  padding: 30px 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  background-color: #eff1f3;
+  min-width: 90%;
+  min-height: 200px;
+}
+
 #app {
   height: 100%;
 }

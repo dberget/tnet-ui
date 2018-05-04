@@ -9,8 +9,8 @@ export default class ChurchPlant extends Component {
   }
   render() {
     return (
-      <div className={style.container}>
-        <div className={style.formBody}>
+      <div class="formContainer">
+        <div className="formBody">
           <h2>New Church</h2>
           <div> Church Location: </div>
           <input onChange={this.handleLocation} />

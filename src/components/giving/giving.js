@@ -14,8 +14,8 @@ export default class Giving extends Component {
 
   render() {
     return (
-      <div className={style.container}>
-        <div className={style.formBody}>
+      <div class="formContainer">
+        <div class="formBody">
           <h2>Giving Form</h2>
           <div> Church Service Date: </div>
           <input onChange={this.handleDate} type="date" />

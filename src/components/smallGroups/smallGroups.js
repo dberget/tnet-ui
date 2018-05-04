@@ -9,8 +9,8 @@ export default class SmallGroup extends Component {
   }
   render() {
     return (
-      <div className={style.container}>
-        <div className={style.formBody}>
+      <div class="formContainer">
+        <div class="formBody">
           <h2>New Small Group</h2>
           <div> Group Type: </div>
           <select onChange={this.handleGroupChange}>

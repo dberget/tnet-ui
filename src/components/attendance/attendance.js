@@ -14,8 +14,8 @@ export default class Attendance extends Component {
 
   render() {
     return (
-      <div className={style.container}>
-        <div className={style.formBody}>
+      <div class="formContainer">
+        <div class="formBody">
           <h2>Attendance Form</h2>
           <div className={style.formHeader}> Church Service Date: </div>
           <input onChange={this.handleDate} type="date" />

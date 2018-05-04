@@ -12,8 +12,8 @@ export default class Believers extends Component {
   }
   render() {
     return (
-      <div className={style.container}>
-        <div className={style.formBody}>
+      <div class="formContainer">
+        <div class="formBody">
           <div> Record New Believers: {this.state.newBelievers} </div>
           <button onClick={this.handleNewBeliever}> + </button>
           <button onClick={this.handleLessBeliever}> - </button>
