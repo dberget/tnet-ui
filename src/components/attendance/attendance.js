@@ -17,10 +17,12 @@ export default class Attendance extends Component {
       <div class="formContainer">
         <div class="formBody">
           <h2>Attendance Form</h2>
-          <div className={style.formHeader}> Church Service Date: </div>
+          <div class="formHeader"> Church Service Date: </div>
           <input onChange={this.handleDate} type="date" />
-          <div className={style.formHeader}> Attendance: </div>
-          <input onChange={this.handleAttendance} type="number" />
+          <div class="formGroup">
+            <div class="formHeader"> Attendance: </div>
+            <input onChange={this.handleAttendance} type="number" />
+          </div>
         </div>
       </div>
     )

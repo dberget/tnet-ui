@@ -12,7 +12,7 @@ export default class SmallGroup extends Component {
       <div class="formContainer">
         <div class="formBody">
           <h2>New Small Group</h2>
-          <div> Group Type: </div>
+          <div className={style.formHeader}> Group Type: </div>
           <select onChange={this.handleGroupChange}>
             <option>Come and See</option>
             <option>Follow Me</option>

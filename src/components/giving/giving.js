@@ -17,10 +17,14 @@ export default class Giving extends Component {
       <div class="formContainer">
         <div class="formBody">
           <h2>Giving Form</h2>
-          <div> Church Service Date: </div>
-          <input onChange={this.handleDate} type="date" />
-          <div> Giving Amount: </div>
-          <input onChange={this.handleAttendance} type="number" />
+          <div class="formGroup">
+            <div class="formHeader"> Church Service Date: </div>
+            <input onChange={this.handleDate} type="date" />
+          </div>
+          <div class="formGroup">
+            <div class="formHeader"> Giving Amount: </div>
+            <input onChange={this.handleAttendance} type="number" />
+          </div>
         </div>
       </div>
     )

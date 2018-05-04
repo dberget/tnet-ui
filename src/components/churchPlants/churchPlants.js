@@ -12,7 +12,7 @@ export default class ChurchPlant extends Component {
       <div class="formContainer">
         <div className="formBody">
           <h2>New Church</h2>
-          <div> Church Location: </div>
+          <div class="formHeader"> Church Location: </div>
           <input onChange={this.handleLocation} />
         </div>
       </div>
