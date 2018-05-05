@@ -11,7 +11,6 @@ export default class Home extends Component {
     return (
       <div class={style.home}>
         <Attendance />
-        <Giving />
         <ChurchPlant />
         <SmallGroup />
         <Believers />

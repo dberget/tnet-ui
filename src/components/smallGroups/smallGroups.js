@@ -5,7 +5,6 @@ export default class SmallGroup extends Component {
   state = { type: "" }
 
   handleGroupChange = e => {
-    console.log(e.target.value)
     this.setState({ type: e.target.value })
   }
 
