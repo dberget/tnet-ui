@@ -1,7 +1,7 @@
 import { h, Component } from "preact"
 import style from "./style.css"
 
-export default class Attendance extends Component {
+export default class ChurchService extends Component {
   state = { date: "", attendance: 0 }
 
   handleDate = e => {
@@ -28,19 +28,24 @@ export default class Attendance extends Component {
       <div class="formContainer">
         <div class="formBody">
           <h2>Record Church Service</h2>
-          <div class="formHeader"> Church Service Date: </div>
-          <input onChange={this.handleDate} type="date" />
+          <div class="formGroup">
+            <div class="formHeader"> Date: </div>
+            <input onChange={this.handleDate} type="date" />
+          </div>
           <div class="formGroup">
             <div class="formHeader"> Attendance: </div>
             <input onChange={this.handleAttendance} type="number" />
-            <div class="formGroup">
-              <div class="formHeader"> Offering Amount: </div>
-              <input onChange={this.handleGiving} type="number" />
-            </div>
-            <button onClick={() => this.handleSubmit(this.state)}>
-              Submit
-            </button>
           </div>
+          <div class="formGroup">
+            <div class="formHeader"> Offering Amount: </div>
+            <input onChange={this.handleGiving} type="number" />
+          </div>
+          <button
+            class="formSubmit"
+            onClick={() => this.handleSubmit(this.state)}
+          >
+            Submit
+          </button>
         </div>
       </div>
     )

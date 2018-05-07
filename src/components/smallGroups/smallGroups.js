@@ -30,7 +30,12 @@ export default class SmallGroup extends Component {
               </option>
             </select>
           </div>
-          <button onClick={() => this.handleSubmit(this.state)}>Submit</button>
+          <button
+            class="formSubmit"
+            onClick={() => this.handleSubmit(this.state)}
+          >
+            Submit
+          </button>
         </div>
       </div>
     )

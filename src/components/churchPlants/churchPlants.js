@@ -23,9 +23,13 @@ export default class ChurchPlant extends Component {
       <div class="formContainer">
         <div className="formBody">
           <h2>New Church</h2>
-          <div class="formHeader"> Church Location: </div>
-          <input onChange={this.handleLocation} />
-          <button onClick={() => this.handleSubmit()}>Submit</button>
+          <div class="formGroup">
+            <div class="formHeader"> Church Location: </div>
+            <input onChange={this.handleLocation} />
+          </div>
+          <button class="formSubmit" onClick={() => this.handleSubmit()}>
+            Submit
+          </button>
           <span> {this.state.success ? "Success!" : null} </span>
         </div>
       </div>

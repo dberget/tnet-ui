@@ -23,18 +23,28 @@ export default class Believers extends Component {
         <div class="formBody">
           <h2> New Believers </h2>
           <div class="formHeader">Record New Believers: {newBelievers}</div>
-          <div class="formGroup">
-            <button onClick={this.handleNewBeliever}> + </button>
-            <button disabled={!newBelievers} onClick={this.handleLessBeliever}>
-              -
+          <div className={style.buttonGroup}>
+            <button
+              className={style.counterButton}
+              onClick={this.handleNewBeliever}
+            >
+              +
             </button>
             <button
+              className={style.counterButton}
               disabled={!newBelievers}
-              onClick={() => this.handleSubmit()}
+              onClick={this.handleLessBeliever}
             >
-              Submit
+              -
             </button>
           </div>
+          <button
+            class="formSubmit"
+            disabled={!newBelievers}
+            onClick={() => this.handleSubmit()}
+          >
+            Submit
+          </button>
         </div>
       </div>
     )

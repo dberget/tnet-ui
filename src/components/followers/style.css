@@ -1,15 +1,11 @@
-h2 {
-  margin: 0;
+.buttonGroup {
+  display: flex;
+  justify-content: space-around;
 }
-
-button {
-  margin-top: 5px;
-  background: #2c5ba3;
-  color: white;
-  font-size: 20px;
-}
-
-.formHeader {
-  margin-bottom: 1px;
-  width: 100%;
+.counterButton {
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  margin: 1rem;
 }
